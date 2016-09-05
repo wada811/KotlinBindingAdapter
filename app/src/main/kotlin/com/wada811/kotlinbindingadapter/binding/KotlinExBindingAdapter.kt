@@ -6,7 +6,9 @@ import android.widget.Button
 import android.widget.TextView
 
 @BindingAdapter("kotlinExText")
-fun TextView.setKotlinExText(text: String) = this.setText(text)
+fun TextView.setKotlinExText(text: String) {
+    this.text = text
+}
 
 @BindingAdapter("kotlinExClick")
 fun Button.setKotlinExClick(listener: View.OnClickListener) = this.setOnClickListener(listener)
